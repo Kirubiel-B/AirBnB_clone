@@ -7,22 +7,25 @@
 
 
 ## Purpose   
-* create a Python package   
+  
 
 
-* create a command interpreter using the `cmd` module   
+* create a command interpreters using the `cmd` module   
 
 
-* serialize and deserialize a Class   
+* serialize and deserializes a Class   
 
 
-* write and read a JSON file   
+* writes and read a JSON file   
 
 
-* manage `datetime`   
+* create a Python packages 
 
 
-* use `*args` and `**kwargs`   
+* manages `datetime`   
+
+
+* uses `*args` and `**kwargs`   
 
 
 
