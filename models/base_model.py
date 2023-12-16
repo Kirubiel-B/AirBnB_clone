@@ -9,14 +9,14 @@ from models import storage
 
 class BaseModel:
 
-    """Base class for Inheritance across the system's classes."""
+    """Base class for Inheritance across the system's classes base model."""
 
     def __init__(self, *args, **kwargs):
         """Initialize Instance attributes with flexible argument handling.
 
         Args:
-            - *args: list Arguments
-            - **kwargs: dict Key-values arguments
+            - *args: LIST Arguments
+            - **kwargs: DICT Key-values arguments
         """
 
         if kwargs is not None and kwargs != {}:
@@ -36,18 +36,21 @@ class BaseModel:
             storage.new(self)
 
     def __str__(self):
+        
         """Get THE officialS SString representation."""
 
         return "[{}] ({}) {}".\
             format(type(self).__name__, self.id, self.__dict__)
 
     def save(self):
+        
         """update THE publicS instance attributeS updated_at"""
 
         self.updated_at = datetime.now()
         storage.save()
 
     def to_dict(self):
+        
         """Convert THE object'S attributeS to a dictionary._"""
 
         my_dict = self.__dict__.copy()
